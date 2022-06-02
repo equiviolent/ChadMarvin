@@ -1,12 +1,19 @@
 # ChadBot
 
-```
-Create a virtual environment:
-$ python3 -m venv marvin-env
+1. Create a virtual environment:
 
-Then activate the environment:
-$ source marvin-env/bin/activate
+   ```sh
+   python3 -m venv marvin-env
+   ```
 
-Install the requirements:
-$ python -m pip install -r requirements.txt
-```
+2. Then activate the environment:
+
+   ```sh
+   source marvin-env/bin/activate
+   ```
+
+3. Install the requirements:
+
+   ```sh
+   python -m pip install -r requirements.txt
+   ```
