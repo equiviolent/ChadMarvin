@@ -36,4 +36,14 @@ async def on_member_join(member):
 #    if 'loser' in message.content.lower():
 #        await message.channel.send('Yes I agree Tanguy is loser! 🎈')
 
+#This function makes the bot seem depressed if you say windows
+def randomPain():
+    painWords = ['why','bruh', 'pain', 'no', 'really ?','torment','misery','I am aching', 'Y u n0 u53 4rch??1','https://www.digitalcitizen.life/how-uninstall-windows-8-windows-7-or-any-other-version-windows/','Please dont post this it isnt funny. Never in all my years on this earth have I cringed at a message so much. I swear on God that seeing this word brings me a pain which I cant describe so please for the sake of my body and mind dont ever post this again or I may legitimately die from cringe']
+    return ''.join(random.sample(painWords,1))
+async def on_message(self, message):
+    if message.author == self.user:
+        return
+    if 'windows' in  message.content.lower().upper():
+        await message.channel.send(randomPain().format(message.author.mention))
+
 client.run(TOKEN)
