@@ -45,7 +45,7 @@ def randomPain():
 async def on_message(self, message):
     if message.author == self.user:
         return
-    if 'windows' in  message.content.lower().upper():
-        await message.channel.send(randomPain().format(message.author.mention))
+    if 'windows' in  message.content.lower():
+        await message.channel.send(randomPain(), reference=message)
 
 client.run(TOKEN)
