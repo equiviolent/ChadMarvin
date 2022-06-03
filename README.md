@@ -1,19 +1,21 @@
 # ChadBot
 
-1. Create a virtual environment:
+You must have docker and docker-engine installed.
+
+1. Build:
 
    ```sh
-   python3 -m venv marvin-env
+   make
    ```
 
-2. Then activate the environment:
+2. stop:
 
    ```sh
-   source marvin-env/bin/activate
+   make stop
    ```
 
-3. Install the requirements:
+3. clean the garbage:
 
    ```sh
-   python -m pip install -r requirements.txt
+   make prune
    ```
