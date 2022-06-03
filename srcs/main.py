@@ -43,7 +43,7 @@ async def on_message(message):
 =======
 @client.event
 async def on_message(self, message):
-    if message.author == self.user:
+    if (message.author.bot):
         return
 >>>>>>> 44b35fdb0dec78276b0f0618799213bb81b4d1d6
     if 'windows' in  message.content.lower():
