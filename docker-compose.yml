@@ -1,0 +1,8 @@
+version: '3'
+services:
+  marvin:
+    build: srcs/
+    container_name: marvin
+    environment:
+      DISCORD_TOKEN: ${DISCORD_TOKEN}
+      DISCORD_GUILD: ${DISCORD_GUILD}
