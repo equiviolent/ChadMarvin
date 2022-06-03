@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import os
 import discord
 from dotenv import load_dotenv
@@ -32,7 +34,14 @@ async def on_member_join(member):
 
 #This function makes the bot seem depressed if you say windows
 def randomPain():
-    painWords = ['why','bruh', 'pain', 'no', 'really ?','torment','misery','I am aching', 'Y u n0 u53 4rch??1','https://www.digitalcitizen.life/how-uninstall-windows-8-windows-7-or-any-other-version-windows/','Please dont post this it isnt funny. Never in all my years on this earth have I cringed at a message so much. I swear on God that seeing this word brings me a pain which I cant describe so please for the sake of my body and mind dont ever post this again or I may legitimately die from cringe']
+    painWords = ['why','bruh','pain','no','really ?','torment','misery',       \
+'I am aching','Y u n0 u53 4rch??1',                                            \
+'https://www.digitalcitizen.life/how-uninstall-windows-8-windows-7-or-any-other\
+-version-windows/',                                                            \
+'Please dont post this it isnt funny. Never in all my years on this earth have \
+I cringed at a message so much. I swear on God that seeing this word brings me \
+a pain which I cant describe so please for the sake of my body and mind dont ev\
+er post this again or I may legitimately die from cringe'] 
     return ''.join(random.sample(painWords,1))
 
 #calling the randomPain fct to refer to a message
