@@ -41,6 +41,8 @@ def randomPain():
 @client.event
 async def on_message(message):
 =======
+#what u doing here @ioscreams ?
+
 @client.event
 async def on_message(self, message):
     if (message.author.bot):
