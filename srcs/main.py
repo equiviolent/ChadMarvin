@@ -37,7 +37,7 @@ def randomPain():
 
 #calling the randomPain fct to refer to a message
 @client.event
-async def on_message(self, message):
+async def on_message(message):
     if (message.author.bot):
         return
     if 'windows' in  message.content.lower():
